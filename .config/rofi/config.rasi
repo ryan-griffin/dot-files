@@ -1,82 +1,81 @@
-configuration {
-	modi:				"drun";
-	font: "CaskaydiaCove Nerd Font 12";
-	show-icons:                     true;
-	icon-theme: 			"Tela-dark";
-	display-drun: 			"";
-	drun-display-format:            "{name}";
-	sidebar-mode: 			false;
-}
-
 @theme "/dev/null"
 
+configuration {
+	modi: "drun";
+	font: "CaskaydiaCove Nerd Font 12";
+	show-icons: true;
+	icon-theme: "Tela-dark";
+	display-drun: "";
+	drun-display-format: "{name}";
+	sidebar-mode: false;
+}
+
 * {
-	bg:				#1d1f21;
-	fg:				#CACFD2;
-	button:				#2a2c2e;
-	background-color:		@bg;
-	text-color:			@fg;
+	fg: #CACFD2;
+	fg2: #888888;
+	bg: #1d1f21;
+	bg2: #2a2c2e;
+	text-color: @fg;
+	background-color: @bg;
 }
 
 window {
-	width:			       600px;
-    height:                600px;
-	padding: 			   20px;
+	width: 600px;
+    height: 600px;
+	padding: 20px;
+}
+
+icon {
+	expand: false;
+	filename: "search-symbolic";
+	size: 20px;
+	background-color: @bg2;
+	padding: 0px 10px 0px 0px;
 }
 
 entry {
-    placeholder:			"Search";
-    background-color:               @button;
-    placeholder-color:              #888888;
-    expand:                         true;
+    placeholder: "Search";
+    background-color: @bg2;
+    placeholder-color: @fg2;
+    expand: true;
 }
 
 inputbar {
-	children:			            [ icon-search, entry ];
-    background-color:               @button;
-    expand:                         false;
-    border-radius:                  6px;
-    padding:                        15px;
-}
-
-icon-search {
-  expand   : false;
-  filename : "search-symbolic";
-  size     : 20px;
-  background-color:               @button;
-  padding: 0px 10px 0px 0px;
+	children: [ icon, entry ];
+    background-color: @bg2;
+    expand: false;
+    padding: 15px;
+    border-radius: 6px;
 }
 
 listview {
-    	cycle:                          false;
-    	dynamic:                        true;
-    	layout:                         vertical;
+	cycle: false;
 }
 
 mainbox {
-    	children:                       [ inputbar, listview ];
-    	spacing:                       	20px;
+	children: [ inputbar, listview ];
+	spacing: 20px;
 }
 
 element {
-    padding:                        15px;
-}
-
-element-icon {
-    	size:                           20px;
-        padding: 0px 10px 0px 0px;
-}
-
-element-text {
-    	expand:                         true;
-}
-
-element-text, element-icon {
-	background-color:		inherit;
-	text-color:			inherit;
+    padding: 15px;
+    border-radius: 6px;
 }
 
 element selected {
-    	background-color:               @button;
-    	border-radius:                  6px;
+    background-color: @bg2;
+}
+
+element-icon {
+	size: 20px;
+	padding: 0px 10px 0px 0px;
+}
+
+element-text {
+    expand: true;
+}
+
+element-text, element-icon {
+	text-color: inherit;
+	background-color: inherit;
 }
