@@ -38,6 +38,7 @@ entry {
     background-color: @bg2;
     placeholder-color: @fg2;
     expand: true;
+	vertical-align: 0.5;
 }
 
 inputbar {
@@ -73,6 +74,7 @@ element-icon {
 
 element-text {
     expand: true;
+	vertical-align: 0.5;
 }
 
 element-text, element-icon {
