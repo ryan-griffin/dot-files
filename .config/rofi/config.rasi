@@ -41,7 +41,7 @@ entry {
 inputbar {
 	children: [ textbox, entry ];
     background-color: @bg2;
-    padding: 13px 15px;
+    padding: 12px 15px;
 	spacing: 10px;
     border-radius: 6px;
 }

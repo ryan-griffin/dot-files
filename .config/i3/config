@@ -165,10 +165,10 @@ exec_always --no-startup-id "picom"
 exec_always --no-startup-id "dunst"
 
 # rofi drun
-bindsym $mod+d exec "rofi -modi drun,run -show drun"
+bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
 
 # rofi window switcher
-bindsym $mod+Tab exec "rofi -modi window,run -show window"
+bindsym $mod+Tab exec --no-startup-id "rofi -modi window,run -show window"
 
 # rofi greenclip
 exec_always --no-startup-id greenclip daemon>/dev/null
@@ -196,3 +196,6 @@ client.urgent           #1d1f21 #1d1f21 #CACFD2 #CACFD2   #1d1f21
 client.placeholder      #1d1f21 #1d1f21 #CACFD2 #CACFD2   #1d1f21
 
 client.background       #1d1f21
+
+# startup programs
+exec "discord --start-minimized"
