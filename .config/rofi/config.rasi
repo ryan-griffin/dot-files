@@ -1,13 +1,10 @@
 @theme "/dev/null"
 
 configuration {
-	modi: "drun";
+	modi: "drun, window";
 	font: "CaskaydiaCove Nerd Font 12";
 	show-icons: true;
-	icon-theme: "Tela-dark";
-	display-drun: "";
 	drun-display-format: "{name}";
-	sidebar-mode: false;
 }
 
 * {
@@ -25,27 +22,27 @@ window {
 	padding: 20px;
 }
 
-icon {
-	expand: false;
-	filename: "search-symbolic";
-	size: 20px;
+textbox {
+	str: "";
+	font: "CaskaydiaCove Nerd Font 15";
+	width: 20px;
+	text-color: @fg2;
 	background-color: @bg2;
-	padding: 0px 10px 0px 0px;
+    expand: false;
 }
 
 entry {
     placeholder: "Search";
     background-color: @bg2;
     placeholder-color: @fg2;
-    expand: true;
 	vertical-align: 0.5;
 }
 
 inputbar {
-	children: [ icon, entry ];
+	children: [ textbox, entry ];
     background-color: @bg2;
-    expand: false;
-    padding: 15px;
+    padding: 13px 15px;
+	spacing: 10px;
     border-radius: 6px;
 }
 
@@ -60,6 +57,7 @@ mainbox {
 
 element {
     padding: 15px;
+	spacing: 10px;
     border-radius: 6px;
 }
 
@@ -69,11 +67,9 @@ element selected {
 
 element-icon {
 	size: 20px;
-	padding: 0px 10px 0px 0px;
 }
 
 element-text {
-    expand: true;
 	vertical-align: 0.5;
 }
 
