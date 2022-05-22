@@ -134,7 +134,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+r reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -153,29 +153,29 @@ bindsym $mod+ctrl+Up resize shrink height 5 px or 5 ppt
 bindsym $mod+ctrl+Right resize grow width 5 px or 5 ppt
 
 # wallpaper
-exec_always --no-startup-id /usr/bin/feh --bg-fill ~/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/wallpaper.jpg
 
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # picom
-exec_always --no-startup-id "picom"
+exec_always --no-startup-id picom
 
 # notifications
-exec_always --no-startup-id "dunst"
+exec_always --no-startup-id dunst
 
 # rofi drun
-bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
+bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 
 # rofi window switcher
-bindsym $mod+Tab exec --no-startup-id "rofi -modi window,run -show window"
+bindsym $mod+Tab exec --no-startup-id rofi -show window -show-icons
 
 # rofi greenclip
 exec_always --no-startup-id greenclip daemon>/dev/null
-bindsym $mod+c exec --no-startup-id "rofi -modi 'clipboard:greenclip print' -show clipboard"
+bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
 
 # screenshot
-bindsym $mod+Shift+s exec --no-startup-id "file=~/Pictures/Screenshots/$(date +%s).png && maim --select $file && notify-send -i $file 'Screenshot saved' $file"
+bindsym $mod+Shift+s exec --no-startup-id file=$HOME/Pictures/Screenshots/$(date +%s).png && maim --select $file && notify-send -i $file "Screenshot saved" $file
 
 # window gap and border
 for_window [class="^.*"] border pixel 0
@@ -201,4 +201,4 @@ client.placeholder      #1d1f21 #1d1f21 #CACFD2 #CACFD2   #1d1f21
 client.background       #1d1f21
 
 # startup programs
-exec "discord --start-minimized"
+exec discord --start-minimized
