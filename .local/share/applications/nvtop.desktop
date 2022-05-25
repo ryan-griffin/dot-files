@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=Nvtop
+Exec=nvtop
+Icon=htop

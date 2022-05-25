@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=Pulse Mixer
+Exec=pulsemixer
+Icon=audio-x-generic
