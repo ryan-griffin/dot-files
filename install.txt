@@ -1,0 +1,48 @@
+cfdisk [disk]
+    Efi (300 MiB)
+    root
+
+mkfs.fat -F32 [efi partition]
+mkfs.ext4 [root partition]
+
+mount [root partition] /mnt
+mkdir /mnt/boot
+mount [efi partition] /mnt/boot
+
+pacstrap /mnt linux linux-firmware amd-ucode base base-devel grub efibootmgr networkmanager nano
+
+genfstab -U /mnt >> /mnt/etc/fstab
+
+arch-chroot /mnt
+
+grub-install --efi-directory=/boot
+
+grub-mkconfig -o /boot/grub/grub.cfg
+
+nano /etc/locale.gen
+    uncomment “en-US.UTF-8 UTF-8”
+
+locale-gen
+
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+
+echo [host name] > /etc/hostname
+
+ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+
+systemctl enable NetworkManager
+
+timedatectl set-ntp true
+
+passwd
+
+exit
+
+reboot
+
+useradd -m [user] -G wheel
+
+passwd [user]
+
+EDITOR=nano visudo
+    uncomment wheel group

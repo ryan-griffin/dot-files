@@ -1,0 +1,17 @@
+xorg
+xorg-xinit
+nvidia
+i3-gaps
+picom
+pulseaudio
+pulsemixer
+rofi
+rofi-greenclip
+polybar
+dunst
+feh
+maim
+ttf-roboto
+ttf-apple-emoji
+nerd-fonts-cascadia-code
+kitty
