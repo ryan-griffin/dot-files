@@ -14,5 +14,4 @@ maim
 ttf-roboto
 ttf-apple-emoji
 nerd-fonts-cascadia-code
-adw-gtk3-git
 kitty
