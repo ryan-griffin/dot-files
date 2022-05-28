@@ -8,8 +8,8 @@ configuration {
 }
 
 * {
-	fg: #CACFD2;
-	fg2: #888888;
+	fg: #c7ccd1;
+	fg2: #999da1;
 	bg: #1d1f21;
 	bg2: #2a2c2e;
 	text-color: @fg;

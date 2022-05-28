@@ -192,11 +192,11 @@ focus_follows_mouse no
 font pango:CaskaydiaCove Nerd Font 12px
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #CACFD2 #CACFD2 #1d1f21 #1d1f21   #CACFD2
-client.focused_inactive #888888 #888888 #1d1f21 #1d1f21   #888888
-client.unfocused        #1d1f21 #1d1f21 #CACFD2 #CACFD2   #1d1f21
-client.urgent           #1d1f21 #1d1f21 #CACFD2 #CACFD2   #1d1f21
-client.placeholder      #1d1f21 #1d1f21 #CACFD2 #CACFD2   #1d1f21
+client.focused          #c7ccd1 #c7ccd1 #1d1f21 #1d1f21   #c7ccd1
+client.focused_inactive #999da1 #999da1 #1d1f21 #1d1f21   #999da1
+client.unfocused        #1d1f21 #1d1f21 #c7ccd1 #c7ccd1   #1d1f21
+client.urgent           #1d1f21 #1d1f21 #c7ccd1 #c7ccd1   #1d1f21
+client.placeholder      #1d1f21 #1d1f21 #c7ccd1 #c7ccd1   #1d1f21
 
 client.background       #1d1f21
 
