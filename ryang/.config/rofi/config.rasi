@@ -17,8 +17,8 @@ configuration {
 }
 
 window {
-	width: 575px;
-    height: 575px;
+	width: 585px;
+    height: 585px;
 }
 
 textbox {
@@ -40,7 +40,7 @@ entry {
 inputbar {
 	children: [ textbox, entry ];
     background-color: @bg2;
-    padding: 12px 15px;
+    padding: 11px 13px;
 	spacing: 10px;
     border-radius: 6px;
 }
@@ -56,7 +56,7 @@ mainbox {
 }
 
 element {
-    padding: 15px;
+    padding: 13px;
 	spacing: 10px;
     border-radius: 6px;
 }
