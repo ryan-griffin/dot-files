@@ -17,6 +17,10 @@ arch-chroot /mnt
 
 grub-install --efi-directory=/boot
 
+nano /etc/default/grub
+    GRUB_TIMEOUT=0
+    GRUB_TIMEOUT_STYLE=hidden
+
 grub-mkconfig -o /boot/grub/grub.cfg
 
 nano /etc/locale.gen
