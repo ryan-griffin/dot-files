@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
