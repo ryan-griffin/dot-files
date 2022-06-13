@@ -19,6 +19,17 @@ configuration {
 window {
 	width: 558px;
     height: 558px;
+	padding: 20px;
+	spacing: 15px;
+	children: [ inputbar, listview ];
+}
+
+inputbar {
+	children: [ textbox, entry ];
+    background-color: @bg2;
+    padding: 10px 12px;
+	spacing: 10px;
+    border-radius: 6px;
 }
 
 textbox {
@@ -37,22 +48,8 @@ entry {
 	vertical-align: 0.5;
 }
 
-inputbar {
-	children: [ textbox, entry ];
-    background-color: @bg2;
-    padding: 10px 12px;
-	spacing: 10px;
-    border-radius: 6px;
-}
-
 listview {
 	cycle: false;
-}
-
-mainbox {
-	children: [ inputbar, listview ];
-	padding: 20px;
-	spacing: 15px;
 }
 
 element {
@@ -73,7 +70,6 @@ element-text {
 	vertical-align: 0.5;
 }
 
-element-text, element-icon {
-	text-color: inherit;
+element-icon, element-text {
 	background-color: inherit;
 }

@@ -1,0 +1,36 @@
+* {
+	fg: #c7ccd1;
+	fg2: #999da1;
+	bg: #1d1f21;
+	bg2: #2a2c2e;
+	background-color: @bg;
+}
+
+window {
+	width: 255px;
+	padding: 20px;
+	children: [ listview ];
+}
+
+listview {
+	cycle: false;
+	layout: horizontal;
+}
+
+element {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+element selected {
+    background-color: @bg2;
+}
+
+element-text {
+	vertical-align: 0.5;
+	horizontal-align: 0.5;
+	font: "CaskaydiaCove Nerd Font 30";
+	width: 50px;
+	text-color: @fg;
+	background-color: inherit;
+}
