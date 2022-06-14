@@ -27,8 +27,7 @@ element selected {
 }
 
 element-text {
-	vertical-align: 0.5;
-	horizontal-align: 0.5;
+	horizontal-align: 0.44;
 	font: "CaskaydiaCove Nerd Font 30";
 	width: 50px;
 	text-color: @fg;
