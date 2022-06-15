@@ -29,7 +29,7 @@ inputbar {
     background-color: @bg2;
     padding: 10px 12px;
 	spacing: 10px;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 textbox {
@@ -55,7 +55,7 @@ listview {
 element {
     padding: 12px;
 	spacing: 10px;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 element selected {
