@@ -17,8 +17,8 @@ configuration {
 }
 
 window {
-	width: 558px;
-    height: 558px;
+	width: 556px;
+    height: 556px;
 	padding: 20px;
 	spacing: 15px;
 	children: [ inputbar, listview ];
@@ -27,7 +27,7 @@ window {
 inputbar {
 	children: [ textbox, entry ];
     background-color: @bg2;
-    padding: 10px 12px;
+    padding: 8px 10px;
 	spacing: 10px;
     border-radius: 5px;
 }
@@ -53,7 +53,7 @@ listview {
 }
 
 element {
-    padding: 12px;
+    padding: 10px;
 	spacing: 10px;
     border-radius: 5px;
 }
